@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.LectorXML.hotel.beans.HotelRiv</class>
+    <class>com.LectorXML.hotel.beans.HotelMel</class>
+    <class>com.LectorXML.hotel.beans.HotelOva</class>
+    <class>com.LectorXML.hotel.beans.HotelSal</class>
+    <class>com.LectorXML.hotel.beans.HotelStf</class>
+    <class>com.LectorXML.maq.beans.MaqMel</class>
+    <class>com.LectorXML.maq.beans.MaqOva</class>
+    <class>com.LectorXML.maq.beans.MaqRiv</class>
+    <class>com.LectorXML.maq.beans.MaqSal</class>
+    <class>com.LectorXML.maq.beans.MaqStf</class>
+    <class>com.LectorXML.visita.beans.VisitaMel</class>
+    <class>com.LectorXML.visita.beans.VisitaOva</class>
+    <class>com.LectorXML.visita.beans.VisitaRiv</class>
+    <class>com.LectorXML.visita.beans.VisitaSal</class>
+    <class>com.LectorXML.visita.beans.VisitaStf</class>
+    <class>com.LectorXML.caja.beans.CajaMel</class>
+    <class>com.LectorXML.caja.beans.CajaOva</class>
+    <class>com.LectorXML.caja.beans.CajaRiv</class>
+    <class>com.LectorXML.caja.beans.CajaStf</class>
+    <properties>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.ejb.HibernatePersistence"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+      <property name="hibernate.format_sql" value="true"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="javax.persistence.schema-generation.database.action" value="none"/>
+      <property name="hibernate.connection.autoReconnect" value="true" />
+    </properties>
+  </persistence-unit>
+</persistence>
